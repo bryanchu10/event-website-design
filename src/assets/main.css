@@ -22,7 +22,7 @@
       pb-7
       mx-auto
       relative
-      md:py-6
+      md:py-4
   }
   .navbar-logo {
     @apply
@@ -80,7 +80,6 @@
       w-full
       items-start
       bg-black
-      pt-3
       pl-3
       max-h-0
       overflow-hidden
