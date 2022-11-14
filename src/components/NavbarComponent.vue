@@ -45,13 +45,13 @@
         <div class="md:flex md:flex-row">
           <button
             type="button"
-            class="w-28 bg-primary py-3 mr-4 hover:bg-amber-500 md:py-4"
+            class="w-28 bg-primary py-3 mr-4 hover:bg-amber-500 md:py-3"
           >
             註冊報名
           </button>
           <button
             type="button"
-            class="w-28 bg-primary py-3 hover:bg-amber-500 md:py-4"
+            class="w-28 bg-primary py-3 hover:bg-amber-500 md:py-3"
           >
             登入
           </button>
