@@ -1,14 +1,11 @@
 <template>
   <nav class="bg-black">
     <div
-      class="
-        container flex flex-wrap items-center justify-between px-3 pt-8 pb-7 mx-auto relative
-        md:py-6"
+      class="navbar-container"
     >
       <h1>
         <RouterLink
-          class="
-            logo
+          class="navbar-logo
             h-5 w-40 bg-[url('@/assets/images/logo-mobile.svg')]
             md:h-8 md:w-[230px] md:bg-[url('@/assets/images/logo-desktop.svg')]"
           to="/"
@@ -48,7 +45,7 @@
         <div class="md:flex md:flex-row">
           <button
             type="button"
-            class="mr-4 w-28 bg-primary py-3 hover:bg-amber-500 md:py-4"
+            class="w-28 bg-primary py-3 mr-4 hover:bg-amber-500 md:py-4"
           >
             註冊報名
           </button>

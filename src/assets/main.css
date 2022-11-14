@@ -10,7 +10,21 @@
 }
 
 @layer components {
-  .logo {
+  .navbar-container {
+    @apply
+      container
+      flex
+      flex-wrap
+      items-center
+      justify-between
+      px-3
+      pt-8
+      pb-7
+      mx-auto
+      relative
+      md:py-6
+  }
+  .navbar-logo {
     @apply
       block
       overflow-hidden
