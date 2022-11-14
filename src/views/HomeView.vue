@@ -9,13 +9,10 @@ export default {
 </script>
 
 <template>
-  <NavbarComponent />
-  <div class="container m-10 mx-auto rounded-xl border bg-gray-200 p-8 shadow">
-    <p class="mb-5 text-3xl font-bold text-gray-700">
-      Welcome!
-    </p>
-    <p class="font-cubic text-lg text-gray-500">
-      Vue and Tailwind CSS in action
-    </p>
+  <div class="h-screen bg-[url('@/assets/images/town-rock.png')]">
+    <NavbarComponent />
+    <div class="container">
+      123
+    </div>
   </div>
 </template>
