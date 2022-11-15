@@ -3,7 +3,7 @@
     <div
       class="navbar-container"
     >
-      <h1>
+      <h2>
         <RouterLink
           class="navbar-logo
             h-5 w-40 bg-[url('@/assets/images/logo-mobile.svg')]
@@ -12,7 +12,7 @@
         >
           THE F2E
         </RouterLink>
-      </h1>
+      </h2>
       <button
         class="navbar-toggler md:hidden"
         :class="{ show: isShow === true }"
