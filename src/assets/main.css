@@ -8,30 +8,3 @@
     src: url('./fonts/Cubic_11_1.013_R.woff2') format(woff2);
   }
 }
-
-@layer components {
-  .navbar-container {
-    @apply container relative mx-auto flex flex-wrap items-center justify-between px-3 pt-8 pb-7 md:py-4 md:px-0;
-  }
-  .navbar-logo {
-    @apply block overflow-hidden whitespace-nowrap bg-center bg-no-repeat indent-[101%];
-  }
-  .navbar-toggler {
-    @apply relative h-5 w-[30px];
-  }
-  .navbar-toggler .bar-icon {
-    @apply absolute block h-[3px] w-[30px] rounded-full bg-gray-300 transition-colors before:absolute before:bottom-2 before:block before:h-[3px] before:w-[30px] before:rounded-full before:bg-gray-300 before:transition-transform after:absolute after:top-2 after:block after:h-[3px] after:w-[30px] after:rounded-full after:bg-gray-300 after:transition-transform;
-  }
-  .navbar-toggler.show .bar-icon {
-    @apply bg-transparent before:translate-y-2 before:rotate-45 after:-translate-y-2 after:-rotate-45;
-  }
-  .navbar-collapse {
-    @apply absolute left-0 top-full z-10 flex max-h-0 w-full flex-col items-start overflow-hidden bg-black pl-3 transition-[padding-top,max-height] md:static md:max-h-screen md:w-auto md:flex-row md:items-center md:py-0;
-  }
-  .navbar-collapse.show {
-    @apply max-h-screen pb-7 md:py-0;
-  }
-  .navbar-link {
-    @apply w-full basis-full py-3 text-white hover:border-white hover:bg-white hover:pl-4 hover:font-bold hover:text-black md:hover:pl-0;
-  }
-}
