@@ -25,7 +25,7 @@
           F2E攻擊了你的村莊！
         </h3>
         <p
-          class="absolute top-1/2 left-0 right-0 text-center font-cubic text-white lg:top-2/3"
+          class="absolute top-1/2 left-0 right-0 text-center font-cubic text-white md:top-[45%] lg:top-2/3"
         >
           <span class="text-2xl lg:hidden">點擊螢幕開始</span>
           <span class="hidden text-5xl lg:inline">請按空白鍵開始</span>
@@ -33,7 +33,7 @@
         <img
           src="@/assets/images/castle.svg"
           alt="castle"
-          class="absolute bottom-0 h-[291px] object-cover lg:static lg:h-auto"
+          class="absolute bottom-0 h-[291px] object-cover sm:h-auto lg:static"
         />
         <img
           src="@/assets/images/fire.gif"
@@ -43,7 +43,7 @@
         <img
           src="@/assets/images/fire.gif"
           alt="fire"
-          class="absolute top-3/4 left-0 w-24 -scale-x-100 lg:top-[45%] lg:left-[10%] lg:w-48"
+          class="absolute top-3/4 left-0 w-24 -scale-x-100 md:top-[80%] lg:top-[45%] lg:left-[10%] lg:w-48"
         />
         <img
           src="@/assets/images/fire.gif"
@@ -64,19 +64,29 @@ export default {
   },
   inject: ['$gsap'],
   mounted() {
-    this.$gsap.fromTo(
-      '.attack-warning',
-      {
-        color: 'rgb(156, 163, 175)',
-      },
-      {
-        color: 'rgb(248, 68, 68)',
-        duration: 0,
-        repeat: -1,
-        yoyo: true,
-        repeatDelay: 1,
-      },
-    );
+    this.attackWarningAnime();
+
+    document.addEventListener('keydown', this.startTrip, { once: true });
+  },
+  methods: {
+    attackWarningAnime() {
+      this.$gsap.fromTo(
+        '.attack-warning',
+        {
+          color: 'rgb(156, 163, 175)',
+        },
+        {
+          color: 'rgb(248, 68, 68)',
+          duration: 0,
+          repeat: -1,
+          yoyo: true,
+          repeatDelay: 1,
+        },
+      );
+    },
+    startTrip() {
+      console.log('startTrip!');
+    },
   },
 };
 </script>
