@@ -11,109 +11,27 @@
 
 @layer components {
   .navbar-container {
-    @apply
-      container
-      flex
-      flex-wrap
-      items-center
-      justify-between
-      px-3
-      pt-8
-      pb-7
-      mx-auto
-      relative
-      md:py-4
+    @apply container relative mx-auto flex flex-wrap items-center justify-between px-3 pt-8 pb-7 md:py-4 md:px-0;
   }
   .navbar-logo {
-    @apply
-      block
-      overflow-hidden
-      whitespace-nowrap
-      bg-no-repeat
-      indent-[101%]
-      bg-center
+    @apply block overflow-hidden whitespace-nowrap bg-center bg-no-repeat indent-[101%];
   }
   .navbar-toggler {
-    @apply
-      h-5
-      w-[30px]
-      relative;
+    @apply relative h-5 w-[30px];
   }
   .navbar-toggler .bar-icon {
-    @apply
-      before:block
-      before:h-[3px]
-      before:w-[30px]
-      before:rounded-full
-      before:bg-gray-300
-      before:absolute
-      before:bottom-2
-      before:transition-transform
-      block
-      h-[3px]
-      w-[30px]
-      rounded-full
-      bg-gray-300
-      absolute
-      transition-colors
-      after:block
-      after:h-[3px]
-      after:w-[30px]
-      after:rounded-full
-      after:bg-gray-300
-      after:absolute
-      after:top-2
-      after:transition-transform
+    @apply absolute block h-[3px] w-[30px] rounded-full bg-gray-300 transition-colors before:absolute before:bottom-2 before:block before:h-[3px] before:w-[30px] before:rounded-full before:bg-gray-300 before:transition-transform after:absolute after:top-2 after:block after:h-[3px] after:w-[30px] after:rounded-full after:bg-gray-300 after:transition-transform;
   }
   .navbar-toggler.show .bar-icon {
-    @apply
-      before:rotate-45
-      before:translate-y-2
-      bg-transparent
-      after:-rotate-45
-      after:-translate-y-2
+    @apply bg-transparent before:translate-y-2 before:rotate-45 after:-translate-y-2 after:-rotate-45;
   }
   .navbar-collapse {
-    @apply
-      flex
-      flex-col
-      w-full
-      items-start
-      bg-black
-      pl-3
-      max-h-0
-      overflow-hidden
-      absolute
-      left-0
-      top-full
-      transition-[padding-top,max-height]
-      md:w-auto
-      md:flex-row
-      md:items-center
-      md:static
-      md:py-0
-      md:max-h-screen
+    @apply absolute left-0 top-full z-10 flex max-h-0 w-full flex-col items-start overflow-hidden bg-black pl-3 transition-[padding-top,max-height] md:static md:max-h-screen md:w-auto md:flex-row md:items-center md:py-0;
   }
   .navbar-collapse.show {
-    @apply
-      pb-7
-      max-h-screen
-      md:py-0
+    @apply max-h-screen pb-7 md:py-0;
   }
   .navbar-link {
-    @apply
-      w-full
-      py-3
-      text-white
-      hover:pl-4
-      hover:border-white
-      hover:bg-white
-      hover:font-bold
-      hover:text-black
-      md:hover:pl-0
-  }
-  .navbar-link {
-    @apply
-      basis-full;
+    @apply w-full basis-full py-3 text-white hover:border-white hover:bg-white hover:pl-4 hover:font-bold hover:text-black md:hover:pl-0;
   }
 }
